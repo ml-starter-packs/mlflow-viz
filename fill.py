@@ -17,15 +17,12 @@ experiment = client.get_experiment_by_name(experiment_name)
 # print(experiment)
 
 run_id = None
-# run_id = "16e0d18c91ed4f9e8d915353e4a0052f"
 
 if not run_id:
     study_run = client.create_run(experiment_id=experiment_id)
     study_run_id = study_run.info.run_id
 else:
     study_run_id = run_id
-
-print(study_run_id)
 
 local_path = "/tmp/test_hist.png"
 fig, ax = plt.subplots()
