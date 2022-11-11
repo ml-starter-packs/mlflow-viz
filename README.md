@@ -1,4 +1,5 @@
 # Mlflow Visualization App
+Live demo: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ml-starter-packs/mlflow-viz/main?urlpath=app/)
 
 This app summarizes the results of a selection of MLflow runs from an experiment.
 
