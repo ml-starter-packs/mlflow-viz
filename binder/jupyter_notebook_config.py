@@ -6,6 +6,7 @@ c.ServerProxy.servers = {
         "port": 8501,
         "absolute_url": False,
         "new_browser_tab": True,
+        "timeout": 10,
         "launcher_entry": {
             "title": "App",
         },
@@ -15,6 +16,7 @@ c.ServerProxy.servers = {
         "port": 5005,
         "absolute_url": False,
         "new_browser_tab": True,
+        "timeout": 15,
         "launcher_entry": {
             "title": "MLflow",
         },
