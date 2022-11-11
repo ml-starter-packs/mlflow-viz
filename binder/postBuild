@@ -4,3 +4,5 @@ for i in `seq 1 10`; do make fill; done
 
 mkdir -p /home/jovyan/.jupyter
 cp binder/jupyter_notebook_config.py /home/jovyan/.jupyter/
+rm -rf demo/
+rm -rf binder/
