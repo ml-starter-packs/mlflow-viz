@@ -4,4 +4,5 @@ pip install jupyter-server-proxy
 
 for i in `seq 1 10`; do make fill; done
 
+mkdir -p /home/jovyan/.jupyter
 cp jupyter_notebook_config.py /home/jovyan/.jupyter/
