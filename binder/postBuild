@@ -1,12 +1,15 @@
 # configuration file for binder
 
+# populate data in mlflow
 for i in `seq 1 20`; do make fill; done
 
+# configure proxy to launch apps
 mkdir -p /home/jovyan/.jupyter
 cp binder/jupyter_notebook_config.py /home/jovyan/.jupyter/
+
+# enhancements
+cat binder/appendix.py >> app.py
+
+# cleanup
 rm -rf demo/
 rm -rf binder/
-echo "with st.sidebar:" >> app.py
-echo "    st.markdown('[launch mlflow (may require refresh)](../mlflow/)')" >> app.py
-echo "    if st.button('Create New Run'):" >> app.py
-echo "        os.system('python fill.py')" >> app.py
