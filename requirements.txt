@@ -1,0 +1,3 @@
+mlflow
+scipy
+streamlit~=1.11.0
