@@ -1,4 +1,4 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ml-starter-packs/mlflow-viz/main?urlpath=app/)
+Try it now in your browser: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ml-starter-packs/mlflow-viz/main?urlpath=app/)
 
 # Mlflow Visualization App
 
