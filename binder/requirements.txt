@@ -1,0 +1,5 @@
+jupyter-server-proxy
+matplotlib
+mlflow~=1.30.0
+scipy~=1.7.0
+streamlit~=1.11.0
