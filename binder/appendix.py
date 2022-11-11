@@ -1,6 +1,7 @@
 
 # start mlflow in background
-os.system("make serve")
+import subprocess
+subprocess.run(["make", "serve"])
 
 # binder-specific features
 with st.sidebar:
