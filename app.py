@@ -192,7 +192,7 @@ with display_metric_cols[1]:
 left_summary_col, right_summary_col = st.columns(2)
 with left_summary_col:
     if show_imgs:
-        print_graphs(left_runs)
+        print_graphs(left_runs_data)
 with right_summary_col:
     if show_imgs:
-        print_graphs(right_runs)
+        print_graphs(right_runs_data)
