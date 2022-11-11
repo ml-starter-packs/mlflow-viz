@@ -6,3 +6,5 @@ mkdir -p /home/jovyan/.jupyter
 cp binder/jupyter_notebook_config.py /home/jovyan/.jupyter/
 rm -rf demo/
 rm -rf binder/
+echo "with st.sidebar:" >> app.py
+echo "    st.markdown('[launch mlflow (may require refresh)](../mlflow/)')" >> app.py
