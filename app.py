@@ -20,6 +20,7 @@ class MLflowData:
     metrics: Dict[str, float]
     info: RunInfo
     tags: Dict[str, str]
+    params: Dict[str, str]
 
     @property
     def artifact_path(self):
@@ -47,6 +48,7 @@ class MLflowData:
                     metrics=run.data.metrics,
                     info=run.info,
                     tags=run.data.tags,
+                    params=run.data.params,
                 )
                 mlflow_data.download_artifacts()
                 yield mlflow_data
