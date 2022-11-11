@@ -1,4 +1,4 @@
-# Mlflow Visualization App
+# MLflow Visualization App
 Live demo: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ml-starter-packs/mlflow-viz/main?urlpath=app/)
 
 This app summarizes the results of a selection of MLflow runs from an experiment.
@@ -17,9 +17,11 @@ Run `make install` to execute `pip install -r requirements.txt`.
 
 ## Usage
 
+### Populate Data
 Run `make fill` a couple of times to populate your MLflow database.
 
-Then run `make run` to start the streamlit app on port `8501` by default.
+### Start App(s)
+`make run` will start the streamlit app on port `8501` by default.
 
 To see your MLflow runs, run `make serve` to start the server on port `5005`.
 
