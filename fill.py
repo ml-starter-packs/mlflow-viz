@@ -34,9 +34,15 @@ fig.savefig(local_path)
 
 
 with mlflow.start_run(run_id=study_run_id):
+    mlflow.log_param("beta", 2)
     mlflow.log_metric("f-beta", 2 * np.random.rand())
-    mlflow.log_metric("revenue", 2 * np.random.rand())
-    mlflow.log_metric("test_accuracy", np.random.rand())
+
+    mlflow.log_metric("train_accuracy", 2 * np.random.rand())
+    mlflow.log_metric("test_accuracy", 2 * np.random.rand())
+
+    mlflow.log_metric("train_precision", np.random.rand())
+    mlflow.log_metric("test_precision", np.random.rand())
+
     mlflow.log_artifact(local_path)
     mlflow.set_tag("compare", np.random.choice(["a", "b", "c"]))
 
