@@ -1,10 +1,8 @@
-postBuild
-
 pip install jupyter-server-proxy
 
 for i in `seq 1 10`; do make fill; done
 
 # start mlflow server
-make serve &;
+make serve &
 # start streamlit app
-make run &;
+make run &
