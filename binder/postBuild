@@ -8,3 +8,5 @@ rm -rf demo/
 rm -rf binder/
 echo "with st.sidebar:" >> app.py
 echo "    st.markdown('[launch mlflow (may require refresh)](../mlflow/)')" >> app.py
+echo "    if st.button('Create New Run'):" >> app.py
+echo "        os.system('python fill.py')" >> app.py

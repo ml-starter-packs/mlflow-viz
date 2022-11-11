@@ -198,3 +198,6 @@ with left_images_col:
 with right_images_col:
     if show_imgs:
         print_graphs(right_runs_data)
+with st.sidebar:
+    if st.button('click me'):
+        os.system('make fill')
