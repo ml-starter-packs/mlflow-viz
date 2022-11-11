@@ -189,10 +189,10 @@ with display_metric_cols[1]:
 
 # IMAGES
 
-left_summary_col, right_summary_col = st.columns(2)
-with left_summary_col:
+left_images_col, right_images_col = st.columns(2)
+with left_images_col:
     if show_imgs:
         print_graphs(left_runs_data)
-with right_summary_col:
+with right_images_col:
     if show_imgs:
         print_graphs(right_runs_data)
