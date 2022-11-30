@@ -9,3 +9,7 @@ install:
 
 serve:
 	mlflow server --port 5005
+
+
+.PHONY: run fill install serve
+
